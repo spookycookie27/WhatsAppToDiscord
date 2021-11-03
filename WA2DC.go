@@ -408,7 +408,7 @@ func initializeWhatsApp() {
 	var err error
 	waConnection, err = wa.NewConn(20 * time.Second)
 	handlePanic(err)
-	waConnection.SetClientVersion(2, 2123, 7)
+	waConnection.SetClientVersion(3, 2123, 7)
 
 	connectToWhatsApp()
 	channelMessageSend(settings.ControlChannelID, "WhatsApp connection successfully made!")
